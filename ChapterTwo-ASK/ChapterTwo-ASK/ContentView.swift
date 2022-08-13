@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-   // let hasImage = true
+    // let hasImage = true
     var body: some View {
-            Image("Cover")
-                .resizable()
-                .scaledToFit()
-            Text("Cover")
-            .padding()
+        VStack {
+            Text("A SwiftUI Kickstart")
+            HStack {
+                Button("Back", action: {})
+                Button("Forward", action: {})
+            }
+        }
         
-            
     }
 }
 
