@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct Checkerboard {
-    let firstView: Text
-    let secondView = Rectangle()
+struct Checkerboard<A: View, B: View> {
+    let firstView: A
+    let secondView: B
+    let stackColor: Color
 }
 
 extension Checkerboard: View {
@@ -19,31 +20,47 @@ extension Checkerboard: View {
                 firstView
                     .frame(minWidth: 0, maxWidth: .infinity)
                 secondView
+                    .frame(minWidth: 0, maxWidth: .infinity)
             }
             HStack {
                 secondView
+                    .frame(minWidth: 0, maxWidth: .infinity)
                 firstView
                     .frame(minWidth: 0, maxWidth: .infinity)
             }
         }
+        .background(stackColor)
     }
 }
 
 extension Checkerboard {
-    init(@CheckerboardBuilder builder: () -> Text) {
+    init(backgroundColor: Color = .white, @CheckerboardBuilder builder: () -> (A, B)) {
+        stackColor = backgroundColor
+        (firstView, secondView) = builder()
+    }
+}
+
+extension Checkerboard where B == Rectangle {
+    init(backgroundColor: Color = .white, @CheckerboardBuilder builder: () -> (A)) {
+        stackColor = backgroundColor
         firstView = builder()
+        secondView = Rectangle()
     }
 }
 
 @resultBuilder
 struct CheckerboardBuilder {
-    static func buildBlock(_ text: Text) -> Text {
-        text
+    static func buildBlock<A: View, B: View>(_ firstView: A, _ secondView: B) -> (A, B) {
+        (firstView, secondView)
+    }
+    
+    static func buildBlock<A:View>(_ firstView: A) -> A {
+        firstView
     }
 }
 
 struct Checkerboard_Previews: PreviewProvider {
     static var previews: some View {
-        Checkerboard(firstView: Text("Kickstart"))
+        Checkerboard(firstView: Text("Kickstart"), secondView: Rectangle(), stackColor: .mint)
     }
 }

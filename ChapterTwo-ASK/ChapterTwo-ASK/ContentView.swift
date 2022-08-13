@@ -11,12 +11,13 @@ struct ContentView: View {
     // let hasImage = true
     var body: some View {
         VStack {
-            Checkerboard {
-                Text("Kickstart")
+            Checkerboard(backgroundColor: .red) {
+                Image("Cover")
+                    .resizable()
+                    .scaledToFit()
+                Text("Go DAWGS")
             }
-            Checkerboard {
-                Text("SWIFTUI")
-            }
+            
         }
     }
 }
