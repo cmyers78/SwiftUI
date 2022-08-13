@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     // let hasImage = true
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text("A SwiftUI Kickstart")
-            HStack {
+            HStack(spacing: 20) {
                 Button("Back", action: {})
                 Button("Forward", action: {})
             }
@@ -24,5 +24,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.sizeThatFits)
     }
 }
