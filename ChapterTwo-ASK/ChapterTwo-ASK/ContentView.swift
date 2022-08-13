@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+   // let hasImage = true
     var body: some View {
-        Image("Cover")
-            .resizable()
-            .scaledToFit()
+            Image("Cover")
+                .resizable()
+                .scaledToFit()
+            Text("Cover")
+            .padding()
+        
             
     }
 }
