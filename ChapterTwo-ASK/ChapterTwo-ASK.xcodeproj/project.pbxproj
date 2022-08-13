@@ -11,6 +11,7 @@
 		108A090428A15572000BF665 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108A090328A15572000BF665 /* ContentView.swift */; };
 		108A090628A15574000BF665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108A090528A15574000BF665 /* Assets.xcassets */; };
 		108A090928A15574000BF665 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108A090828A15574000BF665 /* Preview Assets.xcassets */; };
+		C6D5BA2E28A824E30021AF8B /* Checkerboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5BA2D28A824E30021AF8B /* Checkerboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		108A090328A15572000BF665 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		108A090528A15574000BF665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		108A090828A15574000BF665 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6D5BA2D28A824E30021AF8B /* Checkerboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkerboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				108A090328A15572000BF665 /* ContentView.swift */,
 				108A090528A15574000BF665 /* Assets.xcassets */,
 				108A090728A15574000BF665 /* Preview Content */,
+				C6D5BA2D28A824E30021AF8B /* Checkerboard.swift */,
 			);
 			path = "ChapterTwo-ASK";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D5BA2E28A824E30021AF8B /* Checkerboard.swift in Sources */,
 				108A090428A15572000BF665 /* ContentView.swift in Sources */,
 				108A090228A15572000BF665 /* ChapterTwo_ASKApp.swift in Sources */,
 			);
