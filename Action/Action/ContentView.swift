@@ -7,30 +7,31 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView {
+    @State private var currentValue: Int = 0
+    
+}
+
+extension ContentView: View {
     var body: some View {
         VStack (spacing: 30) {
-        Text("Hello")
-            .padding()
+            IntDisplay(value: currentValue)
             HStack (spacing: 20) {
-                Button(action: back) {
-                    Image(systemName: "arrow.left")
-                }
-                Button(action: forward) {
-                    Image(systemName: "arrow.right")
-                }
+                SymbolButton("arrow.left", action: back)
+                SymbolButton("arrow.right", action: forward)
             }
+   //         .buttonStyle(DoubleBorderButtonStyle())
         }
     }
 }
 
 extension ContentView {
     private func back() {
-        print("Back")
+        currentValue -= 1
     }
     
     private func forward() {
-        print("Forward")
+        currentValue += 1
     }
 }
 
