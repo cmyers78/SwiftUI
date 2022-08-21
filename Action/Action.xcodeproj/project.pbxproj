@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C67F5A0828B2AB4800C48886 /* DesignHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F5A0728B2AB4800C48886 /* DesignHelper.swift */; };
+		C67F5A0A28B2AD5800C48886 /* DoubleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F5A0928B2AD5800C48886 /* DoubleDisplay.swift */; };
 		C6D5BA3C28A8562E0021AF8B /* ActionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5BA3B28A8562E0021AF8B /* ActionApp.swift */; };
 		C6D5BA3E28A8562E0021AF8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5BA3D28A8562E0021AF8B /* ContentView.swift */; };
 		C6D5BA4028A856300021AF8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D5BA3F28A856300021AF8B /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C67F5A0728B2AB4800C48886 /* DesignHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignHelper.swift; sourceTree = "<group>"; };
+		C67F5A0928B2AD5800C48886 /* DoubleDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoubleDisplay.swift; path = ../../../../../DoubleDisplay.swift; sourceTree = "<group>"; };
 		C6D5BA3828A8562E0021AF8B /* Action.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Action.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D5BA3B28A8562E0021AF8B /* ActionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionApp.swift; sourceTree = "<group>"; };
 		C6D5BA3D28A8562E0021AF8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			children = (
 				C6D5BA3B28A8562E0021AF8B /* ActionApp.swift */,
 				C6D5BA3D28A8562E0021AF8B /* ContentView.swift */,
+				C67F5A0728B2AB4800C48886 /* DesignHelper.swift */,
+				C67F5A0928B2AD5800C48886 /* DoubleDisplay.swift */,
 				C6D5BA3F28A856300021AF8B /* Assets.xcassets */,
 				C6D5BA4128A856300021AF8B /* Preview Content */,
 				C6D5BA4928A9513C0021AF8B /* IntDisplay.swift */,
@@ -152,9 +158,11 @@
 				C6D5BA4E28A9745D0021AF8B /* DisplayModifier.swift in Sources */,
 				C6D5BA4A28A9513C0021AF8B /* IntDisplay.swift in Sources */,
 				C6D5BA3E28A8562E0021AF8B /* ContentView.swift in Sources */,
+				C67F5A0828B2AB4800C48886 /* DesignHelper.swift in Sources */,
 				C6D5BA4C28A973A70021AF8B /* DoubleBorderButtonStyle.swift in Sources */,
 				C6D5BA3C28A8562E0021AF8B /* ActionApp.swift in Sources */,
 				C6D5BA5028A978260021AF8B /* SymbolButton.swift in Sources */,
+				C67F5A0A28B2AD5800C48886 /* DoubleDisplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
