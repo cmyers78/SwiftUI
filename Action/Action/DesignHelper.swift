@@ -15,7 +15,7 @@ struct DesignHelper {
 extension DesignHelper: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text(currentValue.description)
+            DoubleDisplay(value: currentValue)
             Slider(value: $currentValue, in: range)
         }
         .padding(20)
